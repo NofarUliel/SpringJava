@@ -9,7 +9,7 @@ public class MyApp {
 		Coach theCoach=new TrackCoach();
 		
 		//use the object
-		System.out.println(theCoach.getDailyWorkput());
+		System.out.println(theCoach.getDailyWorkout());
 	}
 
 }

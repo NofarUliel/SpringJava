@@ -9,14 +9,15 @@ public class HelloSpringApp {
 		//load the spring configuration file
 		
 		 ClassPathXmlApplicationContext contex =
-				 new ClassPathXmlApplicationContext("applicztionContext.xml");
+				 new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		 //retrieve bean from spring container
 		Coach theCoach= contex.getBean("myCoach",Coach.class);
 		
 		//call methods on the beans
-		System.out.println(theCoach.getDailyWorkput());
-		
+		System.out.println(theCoach.getDailyWorkout());
+		System.out.println(theCoach.getDailyFortune());
+	
 		//close the context
 		contex.close();
 
